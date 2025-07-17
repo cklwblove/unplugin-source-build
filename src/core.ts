@@ -383,8 +383,4 @@ const unpluginFactory: UnpluginFactory<PluginSourceBuildOptions | undefined> = (
 };
 
 // 创建 unplugin 实例作为单一变量
-const unpluginSourceBuild = /* #__PURE__ */ createUnplugin(unpluginFactory);
-
-// 导出实例和类型
-export { unpluginSourceBuild };
-export default unpluginSourceBuild;
+export const unpluginSourceBuild = /* #__PURE__ */ createUnplugin(unpluginFactory);
