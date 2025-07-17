@@ -2,7 +2,6 @@
   "name": "unplugin-source-build",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.11.0",
   "description": "An unplugin plugin to provide support for monorepo source code referencing.",
   "license": "MIT",
   "homepage": "https://github.com/cklwblove/unplugin-source-build#readme",
