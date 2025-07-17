@@ -1,4 +1,5 @@
 {
+  "name": "source-build-app",
   "type": "module",
   "private": true,
   "scripts": {

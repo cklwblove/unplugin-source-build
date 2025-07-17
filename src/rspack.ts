@@ -1,4 +1,7 @@
-import { unpluginSourceBuild } from './core.js'
+import { unpluginSourceBuild } from './core.js';
 
-export default unpluginSourceBuild.rspack
-export const rspack = unpluginSourceBuild.rspack 
+// 复用 unpluginSourceBuild 实例的 rspack 插件
+const rspackPlugin = unpluginSourceBuild.rspack;
+
+export default rspackPlugin;
+export { rspackPlugin as rspack };

@@ -1,4 +1,7 @@
-import { unpluginSourceBuild } from './core.js'
+import { unpluginSourceBuild } from './core.js';
 
-export default unpluginSourceBuild.vite
-export const vite = unpluginSourceBuild.vite 
+// 复用 unpluginSourceBuild 实例的 vite 插件
+const vitePlugin = unpluginSourceBuild.vite;
+
+export default vitePlugin;
+export { vitePlugin as vite };

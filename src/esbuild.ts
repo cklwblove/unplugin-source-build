@@ -1,4 +1,7 @@
-import { unpluginSourceBuild } from './core.js'
+import { unpluginSourceBuild } from './core.js';
 
-export default unpluginSourceBuild.esbuild
-export const esbuild = unpluginSourceBuild.esbuild 
+// 复用 unpluginSourceBuild 实例的 esbuild 插件
+const esbuildPlugin = unpluginSourceBuild.esbuild;
+
+export default esbuildPlugin;
+export { esbuildPlugin as esbuild };

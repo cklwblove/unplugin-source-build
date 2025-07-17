@@ -2,15 +2,20 @@
   "name": "source-build-utils",
   "private": true,
   "version": "1.0.0",
-  "types": "./dist/types/index.d.ts",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./src/index.ts",
+  "source": "./src/index.ts",
   "exports": {
     ".": {
-      "types": "./dist/types/index.d.ts",
-      "source": "./src/index.ts"
+      "types": "./src/index.ts",
+      "source": "./src/index.ts",
+      "default": "./dist/index.js"
     },
     "./common": {
-      "types": "./dist/types/common/index.d.ts",
-      "source": "./src/common/index.ts"
+      "types": "./src/common/index.ts",
+      "source": "./src/common/index.ts",
+      "default": "./dist/common/index.js"
     }
   }
 }

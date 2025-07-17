@@ -1,4 +1,7 @@
-import { unpluginSourceBuild } from './core.js'
+import { unpluginSourceBuild } from './core.js';
 
-export default unpluginSourceBuild.webpack
-export const webpack = unpluginSourceBuild.webpack 
+// 复用 unpluginSourceBuild 实例的 webpack 插件
+const webpackPlugin = unpluginSourceBuild.webpack;
+
+export default webpackPlugin;
+export { webpackPlugin as webpack };

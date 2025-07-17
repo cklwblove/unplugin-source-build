@@ -1,8 +1,8 @@
 # unplugin-source-build
 
-[![npm version](https://img.shields.io/npm/v/unplugin-source-build.svg)](https://www.npmjs.com/package/unplugin-source-build)
+[![npm version](https://img.shields.io/npm/v/@winner-fed/unplugin-source-build.svg)](https://www.npmjs.com/package/unplugin-source-build)
 
-一个通用的构建插件，用于为monorepo项目提供源码引用支持。支持Vite、Webpack、Rollup、esbuild、Rspack等多种构建工具。
+一个通用的构建插件，用于为monorepo项目提供源码引用支持。支持Vite、Webpack、Rollup、esbuild、Rspack等多种构建工具。该插件参考了[@rsbuild/plugin-source-build](https://github.com/rspack-contrib/rsbuild-plugin-source-build)。
 
 ## 特性
 
