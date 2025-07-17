@@ -16,11 +16,11 @@
 ## 安装
 
 ```bash
-npm i -D unplugin-source-build
+npm i -D @winner-fed/unplugin-source-build
 # 或
-pnpm add -D unplugin-source-build
+pnpm add -D @winner-fed/unplugin-source-build
 # 或
-yarn add -D unplugin-source-build
+yarn add -D @winner-fed/unplugin-source-build
 ```
 
 ## 使用方式
@@ -29,7 +29,7 @@ yarn add -D unplugin-source-build
 
 ```ts
 // vite.config.ts
-import SourceBuild from 'unplugin-source-build/vite'
+import SourceBuild from '@winner-fed/unplugin-source-build/vite'
 
 export default defineConfig({
   plugins: [
@@ -47,7 +47,7 @@ export default defineConfig({
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-source-build/webpack')({
+    require('@winner-fed/unplugin-source-build/webpack')({
       // 配置选项
     }),
   ],
@@ -58,7 +58,7 @@ module.exports = {
 
 ```js
 // rollup.config.js
-import SourceBuild from 'unplugin-source-build/rollup'
+import SourceBuild from '@winner-fed/unplugin-source-build/rollup'
 
 export default {
   plugins: [
@@ -74,7 +74,7 @@ export default {
 ```js
 // esbuild.config.js
 import { build } from 'esbuild'
-import SourceBuild from 'unplugin-source-build/esbuild'
+import SourceBuild from '@winner-fed/unplugin-source-build/esbuild'
 
 build({
   plugins: [SourceBuild()],
@@ -88,7 +88,7 @@ build({
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-source-build/rspack')({
+    require('@winner-fed/unplugin-source-build/rspack')({
       // 配置选项
     }),
   ],
@@ -101,7 +101,7 @@ module.exports = {
 // nuxt.config.js
 export default defineNuxtConfig({
   modules: [
-    ['unplugin-source-build/nuxt', {
+    ['@winner-fed/unplugin-source-build/nuxt', {
       // 配置选项
     }],
   ],
@@ -185,7 +185,7 @@ my-monorepo/
 
 ```diff
 - import { pluginSourceBuild } from '@rsbuild/plugin-source-build'
-+ import SourceBuild from 'unplugin-source-build/vite'
++ import SourceBuild from '@winner-fed/unplugin-source-build/vite'
 
 export default defineConfig({
   plugins: [
