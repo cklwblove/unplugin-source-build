@@ -179,25 +179,6 @@ my-monorepo/
 - 更好的调试体验（源码映射）
 - 热更新支持
 
-## 从rsbuild插件迁移
-
-如果你之前使用的是`@rsbuild/plugin-source-build`，可以这样迁移：
-
-```diff
-- import { pluginSourceBuild } from '@rsbuild/plugin-source-build'
-+ import SourceBuild from '@winner-fed/unplugin-source-build/vite'
-
-export default defineConfig({
-  plugins: [
--   pluginSourceBuild({
-+   SourceBuild({
-      sourceField: 'source',
-      resolvePriority: 'source',
-    }),
-  ],
-})
-```
-
 ## 许可证
 
 MIT License
