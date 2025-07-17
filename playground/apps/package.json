@@ -4,6 +4,9 @@
   "scripts": {
     "dev": "nodemon -w '../src/**/*.ts' -e .ts -x vite"
   },
+  "dependencies": {
+    "source-build-utils": "workspace:*"
+  },
   "devDependencies": {
     "vite": "^6.3.5",
     "vite-plugin-inspect": "^11.1.0"
