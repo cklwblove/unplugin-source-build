@@ -44,13 +44,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      - name: 更新 lockfile
+        run: |
+          echo "🔄 检查并更新 lockfile..."
+          pnpm install --lockfile-only
+
       - name: 安装依赖
         run: |
-          # 尝试使用 frozen lockfile，如果失败则更新 lockfile
-          pnpm install --frozen-lockfile || {
-            echo "⚠️ Lockfile 不匹配，正在更新..."
-            pnpm install --no-frozen-lockfile
-          }
+          echo "📦 开始安装依赖..."
+          pnpm install --frozen-lockfile || pnpm install --no-frozen-lockfile
 
       - name: Build
         run: pnpm run build
